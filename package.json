@@ -1,0 +1,33 @@
+{
+  "name": "react-smartaichats-livechat",
+  "version": "1.0.0",
+  "description": "LiveChat widget from SmartAIChats.com for React.JS (Next.JS compatible)",
+  "main": "dist/SmartAiChatsLiveChat.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:MaxSmile/react-smartaichats-livechat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.3",
+    "@babel/preset-env": "^7.23.3",
+    "@babel/preset-react": "^7.23.3"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
