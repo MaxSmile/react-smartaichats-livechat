@@ -7,9 +7,9 @@ This package provides a React component to easily integrate the Smart AI Chats l
 ## Installation
 
 ```bash
-npm install react-smart-aichats-livechat
+npm install react-smartaichats-livechat
 # or
-yarn add react-smart-aichats-livechat
+yarn add react-smartaichats-livechat
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ Users of your component will need to pass the chat ID when using it:
 ```jsx
 
 import React from 'react';
-import SmartAiChatsLiveChat from 'react-smart-aichats-livechat';
+import SmartAiChatsLiveChat from 'react-smartaichats-livechat';
 
 const App = () => (
   <div>
@@ -29,6 +29,8 @@ const App = () => (
 
 export default App;
 ```
+
+----
 
 
 ## **Getting Your Free AI-Powered LiveChat Widget from SmartAIChats.com**
