@@ -13,7 +13,7 @@ yarn add react-smartaichats-livechat
 ```
 
 ## Usage
-Users of your component will need to pass the chat ID when using it:
+To use the SmartAiChatsLiveChat component, you need a unique chat ID provided by smartAIChats.com. Pass this chat ID as a prop to the component:
 
 ```jsx
 
@@ -22,7 +22,7 @@ import SmartAiChatsLiveChat from 'react-smartaichats-livechat';
 
 const App = () => (
   <div>
-    <SmartAiChatsLiveChat chatId="ZTVhNWJlMzQ0ODc4M2FjZTM0OTQ2MDlkMjcwYTkxZDN8ZGVmYXVsdA==" />
+    <SmartAiChatsLiveChat chatId="YOUR_CHAT_ID" />
     {/* ... other components */}
   </div>
 );
@@ -30,31 +30,45 @@ const App = () => (
 export default App;
 ```
 
-----
+### Next.js Dynamic Import
 
+```jsx
+import dynamic from 'next/dynamic';
+import React from 'react';
+
+const SmartAiChatsLiveChat = dynamic(
+  () => import('react-smartaichats-livechat').then((mod) => mod.SmartAiChatsLiveChat),
+  { ssr: false }
+);
+
+const Page = () => {
+  return (
+    <div>
+      <SmartAiChatsLiveChat chatId="YOUR_CHAT_ID" />
+      {/* Rest of your component */}
+    </div>
+  );
+};
+
+export default Page;
+```
+
+# Where to get YOUR_CHAT_ID
 
 ## **Getting Your Free AI-Powered LiveChat Widget from SmartAIChats.com**
 
-1. **Visit the Website**: Head over to [SmartAIChats.com](https://SmartAIChats.com).
+To integrate the Smart AI Chats Live Chat widget into your React or Next.js application, you'll need a unique chat ID. Here's how you can obtain it:
 
-2. **Navigate to the Offer**: On the homepage, you'll find a "Start for free" button prominently displayed in the Hero section. This button is your gateway to the free LiveChat widget.
+1. **Sign Up or Log In**: Visit [SmartAIChats.com](https://SmartAIChats.com) and sign up or log in to your account.
 
-3. **Enter Your Email**: Clicking the "Start for free" button will lead you to a section where you can enter your email address. This step is crucial as it's how you'll receive your LiveChat widget code.
+2. **Access the Client Area**: Once logged in, navigate to the client area where you can manage your widgets.
 
-4. **Check Your Inbox**: After submitting your email, keep an eye on your inbox. You'll receive an email containing your first LiveChat widget code.
+3. **Find Your Chat ID**: Your unique chat ID will be listed in the client area. This ID is required to integrate the live chat widget into your application.
 
-5. **Use Your Widget Code**: You can immediately use the code to integrate the LiveChat widget on your website. Just paste it into your site's HTML, and you're set!
+4. **Copy the Chat ID**: Copy this chat ID and use it as the `chatId` prop when implementing the `SmartAiChatsLiveChat` component in your application.
 
-6. **Optional Customization**: In the same email, you'll find an authorization link to a client area. This is where you can further fine-tune your widget settings to better suit your website's needs.
-
-7. **Enjoy Enhanced Engagement**: With the widget installed, your website visitors can now enjoy real-time, AI-powered chat interactions, elevating their experience on your site.
-
-Remember, the widget is completely free, and getting started is as simple as entering your email. So why wait? Enhance your website's engagement today!
-
+The chat ID is essential for linking your website with the Smart AI Chats system, ensuring a seamless integration of the live chat feature.
 
 ## License
-MIT License
 
-
-
-
+This project is open-source and available under the MIT License.
