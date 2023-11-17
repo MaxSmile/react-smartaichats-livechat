@@ -1,13 +1,20 @@
 import React, { useEffect } from 'react';
 
+
+
 const SmartAiChatsLiveChat = ({ chatId }) => {
+  const base_url = 'https://smrtaichats.com';
   useEffect(() => {
     // Function to load the script
     const loadScript = () => {
-      const script = document.createElement('script');
-      script.src = `https://smrtaichats.com/chat/${chatId}`;
-      script.async = true;
-      document.body.appendChild(script);
+      // Check if the script is already added
+      if (!document.getElementById("smartaichats-script")) {
+        const script = document.createElement('script');
+        script.src = `${base_url}/chat/${chatId}`;
+        script.async = true;
+        script.id = "smartaichats-script";
+        document.body.appendChild(script);
+      }
     };
 
     // Load the script when the component mounts
