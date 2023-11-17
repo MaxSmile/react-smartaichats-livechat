@@ -1,4 +1,4 @@
-# React Smart AI Chats Live Chat
+# React SmartAIChats LiveChat Widget
 
 > react-smartaichats-livechat
 
