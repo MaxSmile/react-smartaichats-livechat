@@ -1,6 +1,6 @@
 {
   "name": "react-smartaichats-livechat",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "LiveChat widget from SmartAIChats.com for React.JS (Next.JS compatible)",
   "main": "dist/SmartAiChatsLiveChat.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+git@github.com:MaxSmile/react-smartaichats-livechat.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["LiveChat","widget","SmartAIChats","SmartAIChats.com"],
+  "author": "maxim@vasilkoff.com",
   "license": "MIT",
   "files": [
     "dist",
