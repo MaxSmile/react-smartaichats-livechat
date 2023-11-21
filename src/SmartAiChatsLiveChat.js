@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 
 
 
-const SmartAiChatsLiveChat = ({ chatId }) => {
-  const base_url = 'https://smrtaichats.com';
+const SmartAiChatsLiveChat = ({ chatId, base_url = 'https://smrtaichats.com' }) => {
   useEffect(() => {
     // Function to load the script
     const loadScript = () => {

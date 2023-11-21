@@ -1,6 +1,6 @@
 {
   "name": "react-smartaichats-livechat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "LiveChat widget from SmartAIChats.com for React.JS (Next.JS compatible)",
   "main": "dist/SmartAiChatsLiveChat.js",
   "scripts": {
